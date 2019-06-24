@@ -106,7 +106,7 @@ export default class Dashboard extends React.Component {
 
   getAddress = async (lat, lng) => {
     await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyC5zc1gocW_zI4uxvIYv8KYonheN9ySEYc `
+      `https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=your-api-key `
     )
       .then(response => response.json())
       .then(JSONResponse => {
